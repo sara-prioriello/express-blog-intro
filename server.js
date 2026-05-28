@@ -47,3 +47,8 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
 });
+
+//add bacheca route
+app.get('/bacheca', (req, res) => {
+    res.json(post);
+});
